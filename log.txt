@@ -1,0 +1,7 @@
+
+MessageFilter
+  detects message with NG word
+  does not detect message without NG word
+
+Finished in 0.00175 seconds (files took 0.0742 seconds to load)
+2 examples, 0 failures
