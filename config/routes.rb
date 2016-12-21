@@ -1,17 +1,11 @@
 Rails.application.routes.draw do
-  get 'users/index'
-
-  get 'users/new'
-
-  get 'users/edit'
-
-  get 'users/destroy'
-
-  get 'users/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :users
+  resources :users do
+    resources :posts
+  end
+  resources :posts
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

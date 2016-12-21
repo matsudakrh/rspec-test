@@ -1,11 +1,11 @@
-# class MessageFilter
-#   def initialize(*words)
-#     @words = words
-#   end
-#   def detect?(text)
-#     @words.any? { |w| text.include?(w) }
-#   end
-# end
+class MessageFilter
+  def initialize(*words)
+    @words = words
+  end
+  def detect?(text)
+    @words.any? { |w| text.include?(w) }
+  end
+end
 
 require 'twitter'
 
@@ -27,7 +27,7 @@ class WeatherBot
   end
 end
 
-# 
+#
 # class User
 #   def initialize(name)
 #     @name = name
